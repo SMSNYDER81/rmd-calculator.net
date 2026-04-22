@@ -1,0 +1,58 @@
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build output (if any future tooling is added)
+dist/
+build/
+out/
+
+# Dependency directories (if any future tooling is added)
+node_modules/
+.npm/
+
+# Cloudflare
+.wrangler/
+.dev.vars
+
+# Backup files
+*.bak
+*.backup
+*-backup.*
+*-v[0-9].*
+
+# Misc
+*.tmp
+*.temp
+.cache/
