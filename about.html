@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — RMD Calculator</title>
+<meta name="description" content="About RMD Calculator — a free tool for calculating Required Minimum Distributions for IRAs, 401(k)s, and inherited accounts across all SECURE Act rule eras.">
+<link rel="canonical" href="https://rmd-calculator.net/about.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0f1c2e;--navy2:#162438;--navy3:#1e3050;--navy4:#243a5e;--slate:#2c4a6e;
+  --line:rgba(255,255,255,0.07);--line2:rgba(255,255,255,0.13);
+  --text:#e8edf4;--text2:#9aadc4;--text3:#5c7a9e;
+  --gold:#c9a84c;--gold2:#e8c87a;--gold-dim:rgba(201,168,76,0.12);
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'Source Sans 3',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+  --r:6px;
+}
+html{scroll-behavior:smooth}
+body{background:var(--navy);color:var(--text);font-family:var(--sans);font-size:15px;line-height:1.6;min-height:100vh}
+
+nav{
+  border-bottom:1px solid var(--line2);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 32px;height:56px;
+  background:rgba(15,28,46,0.95);
+  backdrop-filter:blur(12px);
+  position:sticky;top:0;z-index:100;
+}
+.nav-logo{
+  font-family:var(--serif);font-weight:700;font-size:16px;
+  color:var(--gold);text-decoration:none;
+}
+.nav-links{display:flex;gap:24px;}
+.nav-links a{color:var(--text2);text-decoration:none;font-family:var(--mono);font-size:12px;transition:color 0.2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--gold);}
+
+main{
+  max-width:760px;margin:0 auto;padding:80px 32px 120px;
+}
+
+.page-label{
+  font-family:var(--mono);font-size:11px;letter-spacing:0.12em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:16px;
+}
+
+h1{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(28px,5vw,44px);line-height:1.15;
+  margin-bottom:8px;
+}
+h1 em{color:var(--gold);font-style:italic;}
+
+.subtitle{
+  font-size:16px;color:var(--text2);margin-bottom:40px;
+}
+
+.gold-line{
+  width:60px;height:2px;
+  background:linear-gradient(90deg,var(--gold),transparent);
+  margin-bottom:40px;
+}
+
+.content p{
+  color:var(--text2);margin-bottom:20px;font-size:15px;line-height:1.8;
+}
+.content p strong{color:var(--text);font-weight:600;}
+
+.highlight-box{
+  background:var(--gold-dim);
+  border:1px solid rgba(201,168,76,0.25);
+  border-radius:var(--r);
+  padding:24px 28px;margin:36px 0;
+  border-left:3px solid var(--gold);
+}
+.highlight-box p{color:var(--text);margin:0;font-size:15px;line-height:1.7;}
+
+.features{
+  display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:36px 0;
+}
+.feature{
+  background:var(--navy2);border:1px solid var(--line2);
+  border-radius:var(--r);padding:20px 22px;
+}
+.feature-label{
+  font-family:var(--mono);font-size:11px;letter-spacing:0.08em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:8px;
+}
+.feature p{color:var(--text2);font-size:13px;line-height:1.6;margin:0;}
+
+.disclaimer-box{
+  background:rgba(201,168,76,0.06);
+  border:1px solid var(--gold-dim);
+  border-radius:var(--r);
+  padding:20px 24px;margin:36px 0;
+  display:flex;gap:14px;align-items:flex-start;
+}
+.disclaimer-icon{font-size:20px;flex-shrink:0;margin-top:2px;}
+.disclaimer-box p{color:var(--text2);font-size:13px;line-height:1.6;margin:0;}
+.disclaimer-box strong{color:var(--gold);}
+
+.back-link{
+  display:inline-flex;align-items:center;gap:8px;
+  color:var(--gold);text-decoration:none;font-family:var(--mono);
+  font-size:12px;margin-top:48px;transition:opacity 0.2s;
+}
+.back-link:hover{opacity:0.7;}
+
+footer{
+  border-top:1px solid var(--line);padding:24px 32px;
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:12px;
+}
+.footer-copy{color:var(--text3);font-family:var(--mono);font-size:11px;}
+.footer-links{display:flex;gap:20px;}
+.footer-links a{color:var(--text3);text-decoration:none;font-family:var(--mono);font-size:11px;transition:color 0.2s;}
+.footer-links a:hover{color:var(--gold);}
+
+@media(max-width:600px){
+  main{padding:48px 20px 80px;}
+  nav{padding:0 20px;}
+  .features{grid-template-columns:1fr;}
+  footer{padding:20px;flex-direction:column;align-items:flex-start;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">RMD Calculator</a>
+  <div class="nav-links">
+    <a href="/">Calculator</a>
+    <a href="/about.html" class="active">About</a>
+    <a href="/privacy.html">Privacy</a>
+  </div>
+</nav>
+
+<main>
+  <div class="page-label">About</div>
+  <h1>Required Minimum Distributions,<br><em>demystified.</em></h1>
+  <p class="subtitle">A free tool built to cut through the complexity of RMD rules across every era of tax law.</p>
+  <div class="gold-line"></div>
+
+  <div class="content">
+    <p><strong>RMD Calculator</strong> is a free tool that helps retirees and inherited IRA beneficiaries calculate their Required Minimum Distributions — without needing to hire an accountant just to figure out the basic number.</p>
+
+    <p>The rules around RMDs have changed significantly over the past several years. The SECURE Act of 2019, the SECURE 2.0 Act of 2022, and a series of IRS proposed and final regulations have created a landscape where the right calculation depends heavily on <strong>when you inherited the account, how old you are, and what kind of account it is</strong>. Most online calculators ignore this entirely and give a single, often wrong, answer.</p>
+
+    <div class="highlight-box">
+      <p>This calculator covers all major rule eras — original owner IRA and 401(k) accounts, pre-SECURE Act inherited accounts using the stretch IRA method, SECURE 1.0 accounts under the 10-year rule, and SECURE 2.0 accounts under the final IRS regulations. You get the right rules for your situation, not a one-size-fits-all estimate.</p>
+    </div>
+
+    <p>The tool also provides a <strong>multi-year projection</strong> so you can see how your RMDs will change over time as your account balance and life expectancy factors shift — useful for tax planning and understanding the full picture, not just this year's number.</p>
+
+    <p>Everything runs in plain English. Each result includes an explanation of which rules apply to your situation and why, so you actually understand what you're looking at rather than just getting a number with no context.</p>
+
+    <div class="features">
+      <div class="feature">
+        <div class="feature-label">All rule eras</div>
+        <p>Covers original owner, pre-SECURE stretch, SECURE 1.0 10-year, and SECURE 2.0 final regs.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-label">Multi-year projection</div>
+        <p>See how your RMDs change year over year, not just a single number.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-label">Plain English</div>
+        <p>Every result comes with an explanation of which rules apply and why.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-label">Free, no login</div>
+        <p>No account required. Nothing saved, nothing tracked. Just the calculation.</p>
+      </div>
+    </div>
+
+    <div class="disclaimer-box">
+      <div class="disclaimer-icon">⚠️</div>
+      <p><strong>This tool is for informational purposes only.</strong> RMD rules are complex and your specific situation may involve factors this calculator doesn't account for. Always consult a qualified tax professional or financial advisor before making decisions about your retirement accounts.</p>
+    </div>
+
+    <p>If this tool helped you, the best thing you can do is share it with someone else trying to figure out their RMDs. That's how it stays free.</p>
+  </div>
+
+  <a href="/" class="back-link">← Back to the calculator</a>
+</main>
+
+<footer>
+  <span class="footer-copy">© 2026 RMD Calculator</span>
+  <div class="footer-links">
+    <a href="/">Calculator</a>
+    <a href="/about.html">About</a>
+    <a href="/privacy.html">Privacy Policy</a>
+  </div>
+</footer>
+
+</body>
+</html>
