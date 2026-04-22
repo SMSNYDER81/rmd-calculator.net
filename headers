@@ -1,0 +1,23 @@
+# Cloudflare Pages cache headers
+
+# HTML pages — short cache so updates deploy quickly
+/*.html
+  Cache-Control: public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400
+
+# Root index
+/
+  Cache-Control: public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400
+
+# Sitemap and robots — cache for a day
+/sitemap.xml
+  Cache-Control: public, max-age=86400
+
+/robots.txt
+  Cache-Control: public, max-age=86400
+
+# Security headers — good for SEO and AdSense approval
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
