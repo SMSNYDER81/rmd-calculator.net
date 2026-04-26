@@ -1,4 +1,4 @@
 Contact: ssnyder1681@gmail.com
 Expires: 2027-04-23T00:00:00.000Z
 Preferred-Languages: en
-Canonical: https://rmd-calculator.com/.well-known/security.txt
+Canonical: https://rmd-calculator.net/.well-known/security.txt
