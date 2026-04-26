@@ -6,18 +6,10 @@
 <title>RMD Calculator 2026 | IRA & Inherited IRA Required Minimum Distributions</title>
 <meta name="description" content="Free RMD calculator covering all rule eras — original owner IRA/401k, inherited IRA pre-SECURE Act stretch, SECURE 1.0 10-year rule, and SECURE 2.0 final regulations. Instant multi-year projection and plain-English rule explanation.">
 <link rel="canonical" href="https://rmd-calculator.net/">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-
-<!-- Open Graph -->
-<meta property="og:title" content="RMD Calculator 2026 | IRA & Inherited IRA Required Minimum Distributions">
-<meta property="og:description" content="Free RMD calculator covering all rule eras — original owner, inherited IRA, SECURE Act 1.0 & 2.0. Instant multi-year projection.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://rmd-calculator.net/rmd-og-image.svg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FinancialProduct","name":"RMD Calculator — All Rule Eras","description":"Required minimum distribution calculator for original IRA/401k owners and inherited IRA beneficiaries across all SECURE Act rule eras","url":"https://rmd-calculator.net/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
 </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7814690967688754" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -163,27 +155,6 @@ hr.div{border:none;border-top:1px solid var(--line2);margin:24px 0}
 .site-footer{border-top:1px solid var(--line2);padding:32px 24px;text-align:center}
 .footer-disc{max-width:640px;margin:0 auto;font-size:12px;color:var(--text3);line-height:1.6}
 .footer-copy{margin-top:16px;font-family:var(--mono);font-size:11px;color:var(--text3)}
-.footer-nav{display:flex;justify-content:center;gap:20px;margin-top:14px;flex-wrap:wrap}
-.footer-nav a{font-family:var(--mono);font-size:11px;color:var(--text3);text-decoration:underline;cursor:pointer}
-.footer-nav a:hover{color:var(--text2)}
-.privacy-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:1000;overflow-y:auto;padding:40px 20px}
-.privacy-overlay.open{display:flex;align-items:flex-start;justify-content:center}
-.privacy-modal{background:var(--navy2);border:1px solid var(--line2);border-radius:var(--r);max-width:720px;width:100%;padding:36px;position:relative;margin:auto}
-.privacy-close{position:absolute;top:16px;right:20px;background:none;border:none;color:var(--text3);font-size:22px;cursor:pointer;line-height:1}
-.privacy-close:hover{color:var(--text)}
-.privacy-title{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--text);margin-bottom:4px}
-.privacy-date{font-family:var(--mono);font-size:11px;color:var(--text3);margin-bottom:24px}
-.privacy-body h3{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:20px 0 8px}
-.privacy-body p{font-size:14px;color:var(--text2);line-height:1.7;margin-bottom:8px}
-.privacy-body ul{margin:6px 0 8px 18px}
-.privacy-body ul li{font-size:14px;color:var(--text2);line-height:1.7;margin-bottom:4px}
-.privacy-body strong{color:var(--text)}
-.privacy-body a{color:var(--blue)}
-
-
-/* DATE INPUT STYLING */
-input[type=date]{color-scheme:dark}
-input[type=date]::-webkit-calendar-picker-indicator{filter:invert(0.6);cursor:pointer;margin-left:4px}
 
 /* LOOKUP TOOL */
 .lookup-section{margin-bottom:24px}
@@ -368,7 +339,7 @@ input[type=date]::-webkit-calendar-picker-indicator{filter:invert(0.6);cursor:po
 <div class="wrap">
 
   <!-- Ad Top -->
-  <div class="ad-slot">Advertisement <!-- AdSense ins tag goes here --></div>
+  <div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7814690967688754" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
 
   <!-- Disclaimer -->
   <div class="disclaimer">
@@ -440,8 +411,8 @@ input[type=date]::-webkit-calendar-picker-indicator{filter:invert(0.6);cursor:po
           </select>
         </div>
         <div class="field">
-          <label>Your Date of Birth</label>
-          <input type="date" id="owner-dob" min="1930-01-01" max="1970-12-31" oninput="check1959()">
+          <label>Your Year of Birth</label>
+          <input type="number" id="owner-dob" min="1930" max="1970" placeholder="e.g. 1951" oninput="check1959()">
         </div>
       </div>
 
@@ -486,8 +457,8 @@ input[type=date]::-webkit-calendar-picker-indicator{filter:invert(0.6);cursor:po
       </div>
 
       <div class="field" id="spouse-dob-field" style="display:none;">
-        <label>Spouse's Date of Birth</label>
-        <input type="date" id="spouse-dob" min="1940-01-01" max="1990-12-31" oninput="calcSpouseAgeDiff()">
+        <label>Spouse's Year of Birth</label>
+        <input type="number" id="spouse-dob" min="1940" max="1990" placeholder="e.g. 1963" oninput="calcSpouseAgeDiff()">
         <div class="spouse-helper" id="spouse-helper" style="display:none;">
           <div class="spouse-helper-title">Age Difference — Table II Eligibility</div>
           <div style="font-size:13px;color:var(--text2);margin-bottom:6px;">
@@ -578,12 +549,12 @@ input[type=date]::-webkit-calendar-picker-indicator{filter:invert(0.6);cursor:po
 
       <div class="grid2">
         <div class="field">
-          <label>Your Date of Birth <small>(beneficiary)</small></label>
-          <input type="date" id="inh-bene-dob" min="1930-01-01" max="2005-12-31">
+          <label>Your Year of Birth <small>(beneficiary)</small></label>
+          <input type="number" id="inh-bene-dob" min="1930" max="2005" placeholder="e.g. 1968">
         </div>
         <div class="field">
-          <label>Owner's Date of Birth</label>
-          <input type="date" id="inh-owner-dob" min="1920-01-01" max="1980-12-31">
+          <label>Owner's Year of Birth</label>
+          <input type="number" id="inh-owner-dob" min="1920" max="1980" placeholder="e.g. 1945">
         </div>
       </div>
 
@@ -675,19 +646,19 @@ input[type=date]::-webkit-calendar-picker-indicator{filter:invert(0.6);cursor:po
 
       <div class="grid2">
         <div class="field">
-          <label>Your Date of Birth <small>(successor beneficiary)</small></label>
-          <input type="date" id="succ-bene-dob" min="1930-01-01" max="2010-12-31">
+          <label>Your Year of Birth <small>(successor beneficiary)</small></label>
+          <input type="number" id="succ-bene-dob" min="1930" max="2010" placeholder="e.g. 1975">
         </div>
         <div class="field">
-          <label>First Beneficiary's Date of Birth</label>
-          <input type="date" id="succ-first-bene-dob" min="1920-01-01" max="2000-12-31">
+          <label>First Beneficiary's Year of Birth</label>
+          <input type="number" id="succ-first-bene-dob" min="1920" max="2000" placeholder="e.g. 1950">
         </div>
       </div>
 
       <div class="grid2">
         <div class="field">
-          <label>Original Owner's Date of Birth</label>
-          <input type="date" id="succ-owner-dob" min="1920-01-01" max="1980-12-31">
+          <label>Original Owner's Year of Birth</label>
+          <input type="number" id="succ-owner-dob" min="1920" max="1980" placeholder="e.g. 1935">
         </div>
         <div class="field">
           <label>Year Original Owner Died</label>
@@ -725,7 +696,7 @@ input[type=date]::-webkit-calendar-picker-indicator{filter:invert(0.6);cursor:po
   <!-- RESULTS CARD — hidden until calculate() runs -->
   <div class="card" id="results-card" style="display:none;">
 
-    <div class="ad-slot" style="margin-bottom:20px;">Advertisement <!-- AdSense mid --></div>
+    <div class="ad-slot" style="margin-bottom:20px;"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7814690967688754" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
 
     <div class="results-header">
       <div>
@@ -790,7 +761,7 @@ input[type=date]::-webkit-calendar-picker-indicator{filter:invert(0.6);cursor:po
   </div>
 
   <!-- Ad Bottom -->
-  <div class="ad-slot">Advertisement <!-- AdSense bottom --></div>
+  <div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7814690967688754" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
 
 
   <!-- IRS FACTOR LOOKUP TOOL -->
@@ -818,27 +789,27 @@ input[type=date]::-webkit-calendar-picker-indicator{filter:invert(0.6);cursor:po
       <div id="lu-t1-inputs">
         <div class="lookup-inputs">
           <div class="field" style="margin-bottom:0">
-            <label>Beneficiary Date of Birth</label>
-            <input type="date" id="lu-t1-dob" min="1920-01-01" max="2005-12-31" oninput="calcLookup()">
+            <label>Beneficiary Year of Birth</label>
+            <input type="number" id="lu-t1-dob" min="1920" max="2005" placeholder="e.g. 1968" oninput="calcLookup()">
           </div>
           <div class="field" style="margin-bottom:0">
             <label>Year First Inherited</label>
             <input type="number" id="lu-t1-inh-yr" min="1980" max="2026" placeholder="e.g. 2018" oninput="calcLookup()">
           </div>
         </div>
-        <div class="hint" style="margin-bottom:16px;">Per IRS Pub. 590-B, the factor is set in the <strong>first distribution year</strong> (year after death) based on your age that year, then reduced by 1.0 annually. This is the IRS decrement method — your factor is <em>not</em> recalculated from your current age each year.</div>
+        <div class="hint" style="margin-bottom:16px;">Factor is set at beneficiary age in year 1, then decremented by 1 each subsequent year. Enter inheritance year to get the current applicable factor.</div>
       </div>
 
       <!-- Table II inputs -->
       <div id="lu-t2-inputs" style="display:none;">
         <div class="lookup-inputs">
           <div class="field" style="margin-bottom:0">
-            <label>Owner Date of Birth</label>
-            <input type="date" id="lu-t2-owner-dob" min="1925-01-01" max="1965-12-31" oninput="calcLookup()">
+            <label>Owner Year of Birth</label>
+            <input type="number" id="lu-t2-owner-dob" min="1925" max="1965" placeholder="e.g. 1950" oninput="calcLookup()">
           </div>
           <div class="field" style="margin-bottom:0">
-            <label>Spouse Date of Birth</label>
-            <input type="date" id="lu-t2-spouse-dob" min="1940-01-01" max="1990-12-31" oninput="calcLookup()">
+            <label>Spouse Year of Birth</label>
+            <input type="number" id="lu-t2-spouse-dob" min="1940" max="1990" placeholder="e.g. 1963" oninput="calcLookup()">
           </div>
         </div>
         <div class="hint" style="margin-bottom:16px;">Only applies when the spouse is the sole beneficiary AND more than 10 years younger than the owner. Age difference determines which column of Table II is used.</div>
@@ -848,8 +819,8 @@ input[type=date]::-webkit-calendar-picker-indicator{filter:invert(0.6);cursor:po
       <div id="lu-t3-inputs" style="display:none;">
         <div class="lookup-inputs">
           <div class="field" style="margin-bottom:0">
-            <label>Owner Date of Birth</label>
-            <input type="date" id="lu-t3-dob" min="1920-01-01" max="1965-12-31" oninput="calcLookup()">
+            <label>Owner Year of Birth</label>
+            <input type="number" id="lu-t3-dob" min="1920" max="1965" placeholder="e.g. 1951" oninput="calcLookup()">
           </div>
         </div>
         <div class="hint" style="margin-bottom:16px;">Used by all original IRA/401k owners except those using Table II. Factor is looked up fresh each year based on your age — it does not decrement like Table I.</div>
@@ -1012,12 +983,6 @@ input[type=date]::-webkit-calendar-picker-indicator{filter:invert(0.6);cursor:po
 
 <footer class="site-footer">
   <div class="footer-disc">This calculator is provided for informational and educational purposes only and does not constitute tax, legal, or financial advice. RMD rules are governed by the Internal Revenue Code, Treasury Regulations, and IRS guidance, which are subject to change. Results may differ from your actual RMD. Always consult a qualified tax professional before making distribution decisions.</div>
-  <div class="footer-nav">
-    <a onclick="openPrivacyModal()">Privacy Policy</a>
-    <a href="#" onclick="document.querySelector('.disc-section').scrollIntoView({behavior:'smooth'});return false;">Legal Disclaimer</a>
-    <a href="https://www.irs.gov/publications/p590b" target="_blank" rel="noopener">IRS Pub. 590-B</a>
-    <a href="https://www.irs.gov/forms-pubs/about-form-5329" target="_blank" rel="noopener">Form 5329</a>
-  </div>
   <div class="footer-copy">© 2026 rmd-calculator.net · Updated for SECURE 2.0 Final Regulations</div>
 </footer>
 
@@ -1068,62 +1033,7 @@ function $val(id) { return $id(id).value; }
 function $int(id) { return parseInt($val(id)); }
 function $flt(id) { return parseFloat($val(id)); }
 
-// Parse a date input value (YYYY-MM-DD) into {year, month, day}
-function parseDate(id) {
-  var v = $val(id);
-  if (!v) return null;
-  var parts = v.split('-');
-  if (parts.length !== 3) return null;
-  return { year: parseInt(parts[0]), month: parseInt(parts[1]), day: parseInt(parts[2]) };
-}
-
-// Get year from a date input (for era calculations)
-function dobYear(id) {
-  var d = parseDate(id);
-  return d ? d.year : null;
-}
-
-// Calculate exact age as of the current date (April 22, 2026)
-// Returns age in completed years — accounts for whether birthday has passed
-var TODAY = new Date(2026, 3, 22); // April 22, 2026 (month is 0-indexed)
-
-function ageAsOf(dobId, asOfDate) {
-  var d = parseDate(dobId);
-  if (!d) return null;
-  var ref = asOfDate || TODAY;
-  var age = ref.getFullYear() - d.year;
-  // Check if birthday has not yet occurred this year
-  var refMonth = ref.getMonth() + 1; // convert to 1-indexed
-  var refDay = ref.getDate();
-  if (d.month > refMonth || (d.month === refMonth && d.day > refDay)) {
-    age--;
-  }
-  return age;
-}
-
-// Get age in a specific year — uses Dec 31 of that year as reference
-// (IRS RMD age is determined by age attained during the year)
-function ageInYear(dobId, yr) {
-  var d = parseDate(dobId);
-  if (!d) return null;
-  // IRS uses age attained during the calendar year (birthday doesn't matter for year-of)
-  return yr - d.year;
-}
-
-// Age from a raw date object
-function ageFromDOB(dobObj, asOfDate) {
-  if (!dobObj) return null;
-  var ref = asOfDate || TODAY;
-  var age = ref.getFullYear() - dobObj.year;
-  var refMonth = ref.getMonth() + 1;
-  var refDay = ref.getDate();
-  if (dobObj.month > refMonth || (dobObj.month === refMonth && dobObj.day > refDay)) {
-    age--;
-  }
-  return age;
-}
-
-function money(n) { return '$' + n.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2}); }
+function money(n) { return '$' + Math.round(n).toLocaleString('en-US'); }
 function dec(n,d) { return (typeof n === 'number') ? n.toFixed(d==null?1:d) : n; }
 
 function rmdStartAge(birthYear) {
@@ -1215,8 +1125,8 @@ function onAcctTypeChange() {
 }
 
 function check1959() {
-  var d = parseDate('owner-dob');
-  $id('warn-1959').style.display = (d && d.year === 1959) ? '' : 'none';
+  var v = $int('owner-dob');
+  $id('warn-1959').style.display = (v === 1959) ? '' : 'none';
 }
 
 function updateEra() {
@@ -1290,16 +1200,14 @@ function calcOriginal() {
     return;
   }
 
-  var dobObj = parseDate('owner-dob');
+  var dob = $int('owner-dob');
   var bal = $flt('owner-bal');
   var acct = $val('acct-type');
 
-  if (!dobObj) { alert('Please enter your date of birth.'); return; }
+  if (!dob || isNaN(dob)) { alert('Please enter your year of birth.'); return; }
   if (!bal || isNaN(bal) || bal <= 0) { alert('Please enter your account balance.'); return; }
 
-  var dob = dobObj.year;
-  // IRS uses age attained during the calendar year for RMD start determination
-  var age = ageInYear('owner-dob', CY);
+  var age = CY - dob;
   var startAge = rmdStartAge(dob);
 
   // Still-working 401k exception
@@ -1363,7 +1271,7 @@ function calcOriginal() {
   ];
 
   var ruleHtml = '<p>You are the <strong>original owner</strong> of a <strong>'+acctLabel(acct)+'</strong>, age <strong>'+age+'</strong> in '+CY+'.</p>'
-    +'<p>Your RMD uses <strong>'+tableLabel+'</strong>. At age '+age+', the factor is <strong>'+dec(factor)+'</strong>. Dividing your '+money(bal)+' balance by '+dec(factor)+' gives an RMD of <strong>'+money(rmd)+'</strong> ('+dec((rmd/bal)*100,2)+'% of your account).</p>'
+    +'<p>Your RMD uses <strong>'+tableLabel+'</strong>. At age '+age+', the factor is <strong>'+dec(factor)+'</strong>. Dividing your $'+Math.round(bal).toLocaleString()+' balance by '+dec(factor)+' gives an RMD of <strong>'+money(rmd)+'</strong> ('+dec((rmd/bal)*100,2)+'% of your account).</p>'
     +'<p>Deadline: <strong>December 31, '+CY+'</strong>. If this is your first RMD year, you may delay to April 1, '+(CY+1)+' — but delaying means two RMDs next year, which may increase your tax bracket.</p>';
 
   if (S.spouseYounger) {
@@ -1398,24 +1306,22 @@ function buildOrigProj(bal, startAge, retRate) {
 
 // ─── INHERITED IRA ───────────────────────────────────────
 function calcInherited() {
-  var inhYr      = $int('inh-year');
-  var beneDobObj = parseDate('inh-bene-dob');
-  var ownDobObj  = parseDate('inh-owner-dob');
-  var bal        = $flt('inh-bal');
-  var rel        = $val('inh-rel');
-  var acct       = $val('inh-acct');
+  var inhYr   = $int('inh-year');
+  var beneDob = $int('inh-bene-dob');
+  var ownDob  = $int('inh-owner-dob');
+  var bal     = $flt('inh-bal');
+  var rel     = $val('inh-rel');
+  var acct    = $val('inh-acct');
 
-  if (!inhYr || !beneDobObj || !ownDobObj || !bal || isNaN(inhYr) || isNaN(bal) || bal <= 0) {
-    alert('Please fill in all fields: year inherited, your date of birth, owner\'s date of birth, and account balance.');
+  if (!inhYr||!beneDob||!ownDob||!bal||isNaN(inhYr)||isNaN(beneDob)||isNaN(ownDob)||isNaN(bal)||bal<=0) {
+    alert('Please fill in all fields: year inherited, your birth year, owner\'s birth year, and account balance.');
     return;
   }
 
-  var beneDob = beneDobObj.year;
-  var ownDob  = ownDobObj.year;
-  var beneAge = ageFromDOB(beneDobObj);
+  var beneAge = CY - beneDob;
   var ownAgeAtDeath = inhYr - ownDob;
   var ownRBDAge = rmdStartAge(ownDob);
-  var postRBD = (ownAgeAtDeath >= ownRBDAge) && S.rbd === 'post';
+  var postRBD = (ownAgeAtDeath >= ownRBDAge);
   var retRate = S.retInh / 100;
 
   var isPreSecure = inhYr < 2020;
@@ -1423,7 +1329,7 @@ function calcInherited() {
   var isSecure2   = inhYr >= 2023;
 
   if (rel === 'spouse') {
-    calcSpouse(inhYr, beneDobObj, ownDob, bal, beneAge, retRate);
+    calcSpouse(inhYr, beneDob, ownDob, bal, beneAge, retRate);
     return;
   }
   if (rel === 'estate') {
@@ -1431,32 +1337,28 @@ function calcInherited() {
     return;
   }
   if (isPreSecure) {
-    calcStretch(inhYr, beneDobObj, bal, beneAge, rel, retRate);
+    calcStretch(inhYr, beneDob, bal, beneAge, rel, retRate);
     return;
   }
+  // SECURE era EDB or non-EDB
   var isEDB = ['minor-child','disabled','close-age'].indexOf(rel) >= 0;
   if (isEDB && S.edbMethod === 'life') {
-    calcEDBLife(inhYr, beneDobObj, bal, beneAge, rel, retRate);
+    calcEDBLife(inhYr, beneDob, bal, beneAge, rel, retRate);
     return;
   }
-  calc10yr(inhYr, beneDobObj, bal, beneAge, rel, postRBD, retRate, isSecure1, isSecure2);
+  // 10-year rule (non-EDB, or EDB choosing 10-yr)
+  calc10yr(inhYr, beneDob, bal, beneAge, rel, postRBD, retRate, isSecure1, isSecure2);
 }
 
-function calcStretch(inhYr, beneDobObj, bal, beneAge, rel, retRate) {
-  // IRS: factor is set using age attained during first distribution year (year after death)
-  // First distribution year = inhYr + 1 (or inhYr if death was in prior year)
-  // Age used = age attained during that calendar year = (firstDistYear) - birthYear
-  var beneDob = typeof beneDobObj === 'object' && beneDobObj.year ? beneDobObj.year : beneDobObj;
-  var firstDistYear = inhYr + 1;
-  var beneAgeAtInh = firstDistYear - beneDob;
+function calcStretch(inhYr, beneDob, bal, beneAge, rel, retRate) {
+  var beneAgeAtInh = inhYr - beneDob;
   var initFactor   = T1[beneAgeAtInh] || T1[105];
-  // Years elapsed since first distribution year
-  var elapsed      = CY - firstDistYear;
+  var elapsed      = CY - inhYr;
   var curFactor    = Math.max(initFactor - elapsed, 1.0);
   var rmd = bal / curFactor;
 
   showResults('Pre-SECURE Act Stretch', 'era-pre',
-    'Inherited '+inhYr+' · Age '+beneAgeAtInh+' in first dist. year · Factor '+dec(curFactor)+' · IRS decrement method',
+    'Inherited '+inhYr+' · Beneficiary age '+beneAge+' · Table I',
     [
       {l:'RMD for '+CY, v:money(rmd), s:'Annual stretch distribution', hl:true},
       {l:'Your Age',    v:beneAge,    s:'Born '+(CY-beneAge)},
@@ -1465,11 +1367,10 @@ function calcStretch(inhYr, beneDobObj, bal, beneAge, rel, retRate) {
       {l:'Withdrawal Rate', v:dec((rmd/bal)*100,2)+'%', s:'Of balance'}
     ],
     '<p>You inherited before January 1, 2020, so <strong>pre-SECURE Act stretch IRA rules</strong> apply — your account is grandfathered and is NOT subject to the 10-year rule.</p>'
-    +'<p>Annual RMDs are calculated using <strong>Table I (Single Life Expectancy)</strong> per IRS Publication 590-B. The factor is set in the first distribution year ('+firstDistYear+') at your age of '+beneAgeAtInh+' — giving an initial factor of '+dec(initFactor)+'. Per the IRS decrement method, 1.0 is subtracted each year. Current factor after '+(elapsed)+' year'+(elapsed===1?'':'s')+': <strong>'+dec(curFactor)+'</strong>.</p>'
-    +'<p><strong>Important:</strong> You must take annual RMDs every year without fail. Missing distributions could trigger the 25% excise tax and potentially jeopardize the grandfathered treatment.</p>'
-+'<p style="font-size:12px;color:var(--text3);border-top:1px solid var(--line2);margin-top:10px;padding-top:10px;"><strong>Methodology:</strong> This calculator uses the IRS-prescribed decrement method per IRS Pub. 590-B — the factor is fixed in the first distribution year based on your age, then reduced by 1.0 annually. Some financial institutions recalculate using the beneficiary\'s current age each year, which produces a slightly different result. The decrement method is the correct IRS standard.</p>',
+    +'<p>Annual RMDs are calculated using <strong>Table I (Single Life Expectancy)</strong>. Your initial factor at age '+beneAgeAtInh+' was '+dec(initFactor)+'. You subtract 1.0 each year. Current factor: <strong>'+dec(curFactor)+'</strong> (year '+(elapsed+1)+').</p>'
+    +'<p><strong>Important:</strong> You must take annual RMDs every year without fail. Missing distributions could trigger the 25% excise tax and potentially jeopardize the grandfathered treatment.</p>',
     buildStretchProj(bal, curFactor, retRate, beneAge),
-    '', buildDynamicCallouts('inherited', null, beneAge, null, bal, bal/curFactor, inhYr, beneAge)
+    '', buildDynamicCallouts('inherited', null, beneAge, null, bal, bal/curFactor, inhYear, beneAge)
   );
   showTableCard('Table I — Single Life Expectancy', 'Table I', dec(curFactor), 'Applies to pre-SECURE Act grandfathered stretch IRA beneficiaries. Factor set at your age in year 1, reduced by 1.0 each year.');
   injectCallouts('inherited', 'inh-ira', beneAge, rmd, null, inhYr, null);
@@ -1480,15 +1381,12 @@ function calc10yr(inhYr, beneDob, bal, beneAge, rel, postRBD, retRate, isSecure1
   var deadline = inhYr + 10;
   var yrsLeft  = deadline - CY;
   var requiresAnnual = postRBD && S.rbd === 'post';
-  var beneDobYear = typeof beneDob === 'object' && beneDob && beneDob.year ? beneDob.year : beneDob;
 
   var annualRmd = null, annualFactor = null;
   if (requiresAnnual) {
-    // First distribution year = year after owner died = inhYr + 1
-    var firstDistYear = inhYr + 1;
-    var beneAgeAtInh = firstDistYear - beneDobYear;
+    var beneAgeAtInh = inhYr - beneDob;
     var initF = T1[beneAgeAtInh] || T1[105];
-    var elapsed = CY - firstDistYear;
+    var elapsed = CY - inhYr;
     annualFactor = Math.max(initF - elapsed, 1.0);
     annualRmd = bal / annualFactor;
   }
@@ -1528,12 +1426,9 @@ function calc10yr(inhYr, beneDob, bal, beneAge, rel, postRBD, retRate, isSecure1
 }
 
 function calcEDBLife(inhYr, beneDob, bal, beneAge, rel, retRate) {
-  var beneDobYear = typeof beneDob === 'object' && beneDob && beneDob.year ? beneDob.year : beneDob;
-  // First distribution year = year after owner died
-  var firstDistYear = inhYr + 1;
-  var beneAgeAtInh = firstDistYear - beneDobYear;
+  var beneAgeAtInh = inhYr - beneDob;
   var initF  = T1[beneAgeAtInh] || T1[105];
-  var elapsed = CY - firstDistYear;
+  var elapsed = CY - inhYr;
   var curF   = Math.max(initF - elapsed, 1.0);
   var rmd    = bal / curF;
   var relLabels = {'minor-child':'Minor Child of Owner','disabled':'Disabled Beneficiary','close-age':'Close-in-Age Beneficiary'};
@@ -1559,18 +1454,15 @@ function calcEDBLife(inhYr, beneDob, bal, beneAge, rel, retRate) {
   showTableCard('Table I — Single Life Expectancy', 'Table I', dec(curF), 'Applies to Eligible Designated Beneficiaries using the life expectancy method. Factor set at your age in year 1, reduced by 1.0 each year.');
 }
 
-function calcSpouse(inhYr, beneDobObj, ownDob, bal, beneAge, retRate) {
+function calcSpouse(inhYr, beneDob, ownDob, bal, beneAge, retRate) {
   var elect = $val('spouse-elect');
-  var beneDob = typeof beneDobObj === 'object' && beneDobObj && beneDobObj.year ? beneDobObj.year : beneDobObj;
   var spouseRBDAge = rmdStartAge(beneDob);
   var spouseYrRMD = beneDob + spouseRBDAge;
   var yrsUntil = spouseYrRMD - CY;
-  // Use IRS year-of rule for RMD age
-  var beneAgeIRS = ageInYear('inh-bene-dob', CY);
 
   if (elect === 'treat-as-own') {
-    if (beneAgeIRS >= spouseRBDAge) {
-      var f = T3[beneAgeIRS] || T3[120];
+    if (beneAge >= spouseRBDAge) {
+      var f = T3[beneAge] || T3[120];
       var rmd = bal / f;
       showResults('Spouse · Treat as Own', 'era-s2',
         'Spousal · Treat as Own · Inherited '+inhYr,
@@ -1603,10 +1495,9 @@ function calcSpouse(inhYr, beneDobObj, ownDob, bal, beneAge, retRate) {
   }
 
   // Life expectancy method
-  var firstDistYear = inhYr + 1;
-  var beneAgeAtInh = firstDistYear - beneDob;
+  var beneAgeAtInh = inhYr - beneDob;
   var initF = T1[beneAgeAtInh] || T1[105];
-  var elapsed = CY - firstDistYear;
+  var elapsed = CY - inhYr;
   var curF = Math.max(initF - elapsed, 1.0);
   var rmd = bal / curF;
 
@@ -1644,10 +1535,8 @@ function calcGhost(inhYr, ownDob, bal, postRBD, ownAgeAtDeath, retRate) {
       ''
     );
   } else {
-    // Ghost rule: factor set at owner's age in first distribution year after death
-    var firstDistYearG = inhYr + 1;
     var ghostF = T1[ownAgeAtDeath] || T1[105];
-    var elapsed = CY - firstDistYearG;
+    var elapsed = CY - inhYr;
     var curF = Math.max(ghostF - elapsed, 1.0);
     var rmd = bal / curF;
     showResults('Ghost Rule · Owner LE', 'era-pre',
@@ -1669,24 +1558,22 @@ function calcGhost(inhYr, ownDob, bal, postRBD, ownAgeAtDeath, retRate) {
 
 // ─── SUCCESSOR BENEFICIARY ───────────────────────────────
 function calcSuccessor() {
-  var deathYr       = $int('succ-death-yr');
-  var beneDobObj    = parseDate('succ-bene-dob');
-  var firstDobObj   = parseDate('succ-first-bene-dob');
-  var ownerDobObj   = parseDate('succ-owner-dob');
-  var ownerDeath    = $int('succ-owner-death');
-  var bal           = $flt('succ-bal');
-  var acct          = $val('succ-acct');
-  var retRate       = S.retSucc / 100;
+  var deathYr    = $int('succ-death-yr');
+  var beneDob    = $int('succ-bene-dob');
+  var firstDob   = $int('succ-first-bene-dob');
+  var ownerDob   = $int('succ-owner-dob');
+  var ownerDeath = $int('succ-owner-death');
+  var bal        = $flt('succ-bal');
+  var acct       = $val('succ-acct');
+  var retRate    = S.retSucc / 100;
 
-  if (!deathYr||!beneDobObj||!firstDobObj||!ownerDobObj||!ownerDeath||!bal||isNaN(deathYr)||isNaN(ownerDeath)||isNaN(bal)||bal<=0) {
-    alert('Please fill in all fields: first beneficiary death year, all dates of birth, owner death year, and account balance.');
+  if (!deathYr||!beneDob||!firstDob||!ownerDob||!ownerDeath||!bal||
+      isNaN(deathYr)||isNaN(beneDob)||isNaN(firstDob)||isNaN(ownerDob)||isNaN(ownerDeath)||isNaN(bal)||bal<=0) {
+    alert('Please fill in all fields: first beneficiary death year, all birth years, owner death year, and account balance.');
     return;
   }
 
-  var beneDob  = beneDobObj.year;
-  var firstDob = firstDobObj.year;
-  var ownerDob = ownerDobObj.year;
-  var beneAge  = ageFromDOB(beneDobObj);
+  var beneAge     = CY - beneDob;
   var deadline    = deathYr + 10;
   var yrsLeft     = deadline - CY;
   var postRBD     = (S.succRbd === 'post');
@@ -1888,20 +1775,18 @@ function calcLookup() {
   var resultEl = $id('lookup-result');
 
   if (lookupTable === 't1') {
-    var dobObj = parseDate('lu-t1-dob');
-    var inhYr  = parseInt($id('lu-t1-inh-yr').value);
-    if (!dobObj || !inhYr || isNaN(inhYr)) {
+    var dob   = parseInt($id('lu-t1-dob').value);
+    var inhYr = parseInt($id('lu-t1-inh-yr').value);
+    if (!dob || !inhYr || isNaN(dob) || isNaN(inhYr)) {
       resultEl.className = 'lookup-result';
-      resultEl.innerHTML = '<div class="lr-empty">Enter beneficiary date of birth and inheritance year</div>';
+      resultEl.innerHTML = '<div class="lr-empty">Enter beneficiary birth year and inheritance year</div>';
       return;
     }
-    var dob = dobObj.year;
-    var firstDistYear = inhYr + 1;
-    var ageAtInh    = firstDistYear - dob;
+    var ageAtInh    = inhYr - dob;
     var initFactor  = T1[ageAtInh] || T1[105];
-    var elapsed     = CY - firstDistYear;
+    var elapsed     = CY - inhYr;
     var curFactor   = Math.max(initFactor - elapsed, 1.0);
-    var curAge      = ageFromDOB(dobObj);
+    var curAge      = CY - dob;
 
     // Build adjacent years strip (2 before, current, 2 after)
     var strip = '';
@@ -1923,15 +1808,15 @@ function calcLookup() {
       +'<div class="lr-ages">'+strip+'</div>';
 
   } else if (lookupTable === 't2') {
-    var ownerDobObj  = parseDate('lu-t2-owner-dob');
-    var spouseDobObj = parseDate('lu-t2-spouse-dob');
-    if (!ownerDobObj || !spouseDobObj) {
+    var ownerDob  = parseInt($id('lu-t2-owner-dob').value);
+    var spouseDob = parseInt($id('lu-t2-spouse-dob').value);
+    if (!ownerDob || !spouseDob || isNaN(ownerDob) || isNaN(spouseDob)) {
       resultEl.className = 'lookup-result';
-      resultEl.innerHTML = '<div class="lr-empty">Enter both dates of birth above</div>';
+      resultEl.innerHTML = '<div class="lr-empty">Enter both birth years above</div>';
       return;
     }
-    var ownerAge  = ageFromDOB(ownerDobObj);
-    var spouseAge = ageFromDOB(spouseDobObj);
+    var ownerAge  = CY - ownerDob;
+    var spouseAge = CY - spouseDob;
     var diff      = ownerAge - spouseAge;
 
     if (diff <= 10) {
@@ -1960,14 +1845,13 @@ function calcLookup() {
       +'<div class="lr-ages">'+strip+'</div>';
 
   } else {
-    var t3DobObj = parseDate('lu-t3-dob');
-    if (!t3DobObj) {
+    var dob = parseInt($id('lu-t3-dob').value);
+    if (!dob || isNaN(dob)) {
       resultEl.className = 'lookup-result';
-      resultEl.innerHTML = '<div class="lr-empty">Enter owner date of birth above</div>';
+      resultEl.innerHTML = '<div class="lr-empty">Enter owner birth year above</div>';
       return;
     }
-    // IRS uses age attained during the year for Table III
-    var age    = ageInYear('lu-t3-dob', CY);
+    var age    = CY - dob;
     var factor = T3[age] || null;
 
     if (!factor) {
@@ -2175,15 +2059,15 @@ function injectCallouts(ownerType, acctType, age, rmd, startAge, inhYr, deadline
 
 // ─── SPOUSE AGE DIFFERENCE HELPER ────────────────────────
 function calcSpouseAgeDiff() {
-  var ownerDobObj  = parseDate('owner-dob');
-  var spouseDobObj = parseDate('spouse-dob');
-  var helper       = $id('spouse-helper');
-  if (!ownerDobObj || !spouseDobObj) {
+  var ownerDob  = $int('owner-dob');
+  var spouseDob = $int('spouse-dob');
+  var helper    = $id('spouse-helper');
+  if (!ownerDob || !spouseDob || isNaN(ownerDob) || isNaN(spouseDob)) {
     helper.style.display = 'none';
     return;
   }
-  var ownerAge  = ageFromDOB(ownerDobObj);
-  var spouseAge = ageFromDOB(spouseDobObj);
+  var ownerAge  = CY - ownerDob;
+  var spouseAge = CY - spouseDob;
   var diff      = ownerAge - spouseAge;
   helper.style.display = '';
   $id('sh-owner-age').textContent  = ownerAge;
@@ -2269,71 +2153,5 @@ function toggleFaq(el) {
   el.classList.toggle('open');
 }
 </script>
-
-<!-- PRIVACY POLICY MODAL -->
-<div class="privacy-overlay" id="privacy-overlay" onclick="closePrivacy(event)">
-  <div class="privacy-modal">
-    <button type="button" class="privacy-close" onclick="closePrivacyModal()">✕</button>
-    <div class="privacy-title">Privacy Policy</div>
-    <div class="privacy-date">Effective date: April 2026 · rmd-calculator.net</div>
-    <div class="privacy-body">
-
-      <h3>Overview</h3>
-      <p>rmd-calculator.net is a free educational tool. We are committed to protecting your privacy. This policy explains what information is collected when you use this site and how it is used.</p>
-
-      <h3>Information We Do Not Collect</h3>
-      <p>This calculator runs entirely in your browser. <strong>We do not collect, store, transmit, or retain any of the financial or personal information you enter into the calculator.</strong> All inputs (birth years, account balances, inheritance dates, etc.) are processed locally in your browser and are never sent to any server.</p>
-
-      <h3>Information Collected Automatically</h3>
-      <p>Like most websites, this site may collect certain non-personally-identifiable information automatically through standard web server logs and analytics, including:</p>
-      <ul>
-        <li>Browser type and version</li>
-        <li>Operating system</li>
-        <li>Pages visited and time spent on the site</li>
-        <li>Referring URL</li>
-        <li>General geographic location (country/region level only)</li>
-      </ul>
-      <p>This information is used solely to understand how the site is used and to improve it. It is not linked to any personally identifiable information.</p>
-
-      <h3>Google AdSense &amp; Advertising Cookies</h3>
-      <p>This site uses <strong>Google AdSense</strong> to display advertisements. Google AdSense uses cookies and web beacons to serve ads based on your prior visits to this and other websites. Google's use of advertising cookies enables it and its partners to serve ads based on your visit to this site and/or other sites on the internet.</p>
-      <p>You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ads Settings</a> or by visiting <a href="https://www.aboutads.info" target="_blank" rel="noopener">aboutads.info</a>. You can also opt out through the <a href="https://www.networkadvertising.org/choices/" target="_blank" rel="noopener">Network Advertising Initiative opt-out page</a>.</p>
-      <p>For more information on how Google uses data from sites that use its advertising services, see <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use our services</a>.</p>
-
-      <h3>Cookies</h3>
-      <p>This site itself does not set any first-party cookies. Third-party advertising partners (including Google AdSense) may set cookies in your browser. You can control cookie settings through your browser preferences. Disabling cookies may affect the display of advertisements but will not affect the functionality of the calculator.</p>
-
-      <h3>Third-Party Links</h3>
-      <p>This site contains links to external websites including IRS.gov, congress.gov, and other government and reference sources. We are not responsible for the privacy practices or content of those sites. We encourage you to review their privacy policies.</p>
-
-      <h3>Children's Privacy</h3>
-      <p>This site is not directed at children under the age of 13 and we do not knowingly collect any information from children under 13.</p>
-
-      <h3>Changes to This Policy</h3>
-      <p>We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated effective date. Continued use of the site after changes constitutes acceptance of the updated policy.</p>
-
-      <h3>Contact</h3>
-      <p>If you have questions about this privacy policy, you may contact us through the site. As this is a free educational tool operated by an individual, response times may vary.</p>
-
-      <p style="margin-top:20px;padding-top:16px;border-top:1px solid var(--line2);font-size:12px;color:var(--text3);">This privacy policy was prepared in accordance with Google AdSense program policies and applicable privacy regulations. This site does not sell personal information.</p>
-    </div>
-  </div>
-</div>
-
-
-<script>
-function openPrivacyModal() {
-  document.getElementById('privacy-overlay').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-function closePrivacyModal() {
-  document.getElementById('privacy-overlay').classList.remove('open');
-  document.body.style.overflow = '';
-}
-function closePrivacy(e) {
-  if (e.target === document.getElementById('privacy-overlay')) closePrivacyModal();
-}
-</script>
-<script src="/feedback.js" data-repo="SMSNYDER81/rmd-calculator.net"></script>
 </body>
 </html>
